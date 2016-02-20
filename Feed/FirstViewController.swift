@@ -14,7 +14,7 @@ class FirstViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         TableViewPlats.reloadData()
         
     }
@@ -45,7 +45,12 @@ class FirstViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
         cell.textLabel?.text = Plats[indexPath.row].nom
-        
+        cell.imageView?.image = Plats[indexPath.row].imatge
+        cell.detailTextLabel?.text = "Usuari"
+       
+        cell.imageView!.layer.cornerRadius = 10
+        cell.imageView!.layer.borderWidth = 2
+   
         return cell
     }
     
@@ -55,6 +60,17 @@ class FirstViewController: UITableViewController {
         ImatgeVista = (Plats[indexPath.row].imatge)!
         
     }
+    //borrar index
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete{
+            Plats.removeAtIndex(indexPath.row)
+        }
+        
+        TableViewPlats.reloadData()
+    }
+
 
 
 
