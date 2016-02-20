@@ -7,8 +7,8 @@
 //
 
 import UIKit
+import Alamofire
 
-var Plats = [Plat]()
 
 class SecondViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -27,14 +27,13 @@ class SecondViewController: UITableViewController, UIImagePickerControllerDelega
     
     @IBAction func SaveTapped(sender: AnyObject) {
         
-        var newPlat = Plat(nom: NomLabel.text!, descripcio: DescripcioLabel.text, imatge: PlatImage.image)
-        
-        Plats.append(newPlat!)
-        
-        NomLabel.text = ""
-        DescripcioLabel.text = ""
-        
-
+//        var plat = (nom: NomLabel.text, descripcio: DescripcioLabel.text, foto: UIImagePNGRepresentation(ImatgeVista))
+        Alamofire.request(.POST, "http://54.201.234.52/plat/save", parameters: ["nom" : NomLabel.text!, "descripcio" : DescripcioLabel.text/*, "foto" : String(UIImagePNGRepresentation(PlatImage.image!)!)*/], encoding: .JSON)
+            .responseString { response in
+                print(response)
+                self.NomLabel.text = ""
+                self.DescripcioLabel.text = ""
+        }
     }
 
     

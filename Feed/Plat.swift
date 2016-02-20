@@ -12,14 +12,13 @@ class Plat {
 
     var nom: String = ""
     var descripcio: String = ""
-    var imatge: UIImage?
+    //var imatge: UIImage?
 
-    init?(nom: String, descripcio:String, imatge: UIImage?){
+    init?(nom: String, descripcio:String/*, imatge: UIImage*/){
         
         self.nom = nom
         self.descripcio = descripcio
-        self.imatge = imatge
-        
+        /*self.imatge = imatge*/
     }
 
 }
