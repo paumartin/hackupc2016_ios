@@ -15,6 +15,8 @@
 		571DA1011C77CA2A003A3C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571DA0FF1C77CA2A003A3C90 /* LaunchScreen.storyboard */; };
 		571DA10C1C77CA2A003A3C90 /* FeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA10B1C77CA2A003A3C90 /* FeedTests.swift */; };
 		571DA1171C77CA2A003A3C90 /* FeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA1161C77CA2A003A3C90 /* FeedUITests.swift */; };
+		571DA1251C77D570003A3C90 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA1241C77D570003A3C90 /* ThirdViewController.swift */; };
+		571DA1271C77D89D003A3C90 /* Plat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA1261C77D89D003A3C90 /* Plat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		571DA1121C77CA2A003A3C90 /* FeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		571DA1161C77CA2A003A3C90 /* FeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUITests.swift; sourceTree = "<group>"; };
 		571DA1181C77CA2A003A3C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571DA1241C77D570003A3C90 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		571DA1261C77D89D003A3C90 /* Plat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				571DA0F41C77CA2A003A3C90 /* AppDelegate.swift */,
 				571DA0F61C77CA2A003A3C90 /* FirstViewController.swift */,
 				571DA0F81C77CA2A003A3C90 /* SecondViewController.swift */,
+				571DA1241C77D570003A3C90 /* ThirdViewController.swift */,
 				571DA0FA1C77CA2A003A3C90 /* Main.storyboard */,
 				571DA0FD1C77CA2A003A3C90 /* Assets.xcassets */,
 				571DA0FF1C77CA2A003A3C90 /* LaunchScreen.storyboard */,
 				571DA1021C77CA2A003A3C90 /* Info.plist */,
+				571DA1261C77D89D003A3C90 /* Plat.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 			files = (
 				571DA0F91C77CA2A003A3C90 /* SecondViewController.swift in Sources */,
 				571DA0F51C77CA2A003A3C90 /* AppDelegate.swift in Sources */,
+				571DA1251C77D570003A3C90 /* ThirdViewController.swift in Sources */,
 				571DA0F71C77CA2A003A3C90 /* FirstViewController.swift in Sources */,
+				571DA1271C77D89D003A3C90 /* Plat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Feed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Arnau.Feed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Feed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Arnau.Feed;
 				PRODUCT_NAME = "$(TARGET_NAME)";

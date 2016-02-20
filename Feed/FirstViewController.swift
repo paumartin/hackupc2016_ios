@@ -8,17 +8,54 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UITableViewController {
 
+    @IBOutlet var TableViewPlats: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        TableViewPlats.reloadData()
+        
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        TableViewPlats.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    // MARK: - Table view data source
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return Plats.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        
+        cell.textLabel?.text = Plats[indexPath.row].nom
+        
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        DescripcioVista = Plats[indexPath.row].descripcio
+        NomVista = Plats[indexPath.row].nom
+        ImatgeVista = (Plats[indexPath.row].imatge)!
+        
+    }
+
 
 
 }
