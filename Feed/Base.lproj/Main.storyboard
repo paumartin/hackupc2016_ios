@@ -113,6 +113,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="FEED" id="b01-I9-9kB">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="yRK-aO-5Ww">
+                            <color key="tintColor" white="0.94135381709999999" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="SaveTapped:" destination="t7v-qC-CIw" id="SEh-8S-UFC"/>
                             </connections>
@@ -275,8 +276,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjp-i2-Yiu">
-                                                    <rect key="frame" x="61" y="8" width="199" height="126"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kjp-i2-Yiu">
+                                                    <rect key="frame" x="33" y="8" width="255" height="126"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -315,6 +316,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="exo-Pz-0cz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.21615186333656311" green="0.61366194486618042" blue="0.85666555166244507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -334,6 +336,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fCH-nB-KAX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.21615186333656311" green="0.61366194486618042" blue="0.85666555166244507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
