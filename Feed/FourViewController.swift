@@ -24,40 +24,37 @@ class FourViewController: UITableViewController {
     
     
     // MARK: - Table view data source
-    
-
-    
+    /*
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return Plats.count
+        return 28
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
-        //cell.textLabel?.text = String(Plats[indexPath.row].nom)
+        cell.textLabel?.text = String(Plats[indexPath.row].nom)
         
         //cell.imageView?.image = plats[indexPath.row].imatge
         
         //cell.detailTextLabel?.text = String(Plats[indexPath.row].usuari)
-        cell.textLabel?.text = String(NomVista)
+        
         /*
         cell.imageView!.layer.cornerRadius = 10
         cell.imageView!.layer.borderWidth = 2
         */
         return cell
-    }
+    }*/
     /*
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         
         DescripcioVista = Plats[indexPath.row].descripcio
         NomVista = Plats[indexPath.row].nom
         
-        //  ImatgeVista = (Plats[indexPath.row].imatge)!
+       //ImatgeVista = (Plats[indexPath.row].imatge)!
         
-    }
-    */
+    }*/
     //borrar index
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
@@ -68,5 +65,5 @@ class FourViewController: UITableViewController {
         
         
     }
-
+    
 }
