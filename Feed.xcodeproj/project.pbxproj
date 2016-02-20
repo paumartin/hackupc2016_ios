@@ -17,6 +17,8 @@
 		571DA1171C77CA2A003A3C90 /* FeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA1161C77CA2A003A3C90 /* FeedUITests.swift */; };
 		571DA1251C77D570003A3C90 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA1241C77D570003A3C90 /* ThirdViewController.swift */; };
 		571DA1271C77D89D003A3C90 /* Plat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA1261C77D89D003A3C90 /* Plat.swift */; };
+		576EF1801C78B92800ED0A6F /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576EF17F1C78B92800ED0A6F /* FourViewController.swift */; };
+		576EF1821C78B94200ED0A6F /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576EF1811C78B94200ED0A6F /* FiveViewController.swift */; };
 		6D31E79AC6BE20E29C1933B8 /* Pods_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5AA88D1B5A0D2D7C5F2954 /* Pods_Feed.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		571DA1181C77CA2A003A3C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		571DA1241C77D570003A3C90 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		571DA1261C77D89D003A3C90 /* Plat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plat.swift; sourceTree = "<group>"; };
+		576EF17F1C78B92800ED0A6F /* FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		576EF1811C78B94200ED0A6F /* FiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		AB4D4F08C34356ED76BF02FF /* Pods-Feed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feed/Pods-Feed.release.xcconfig"; sourceTree = "<group>"; };
 		CD5AA88D1B5A0D2D7C5F2954 /* Pods_Feed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09705093EF97F8784ED4582 /* Pods-Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feed/Pods-Feed.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				571DA0F61C77CA2A003A3C90 /* FirstViewController.swift */,
 				571DA0F81C77CA2A003A3C90 /* SecondViewController.swift */,
 				571DA1241C77D570003A3C90 /* ThirdViewController.swift */,
+				576EF17F1C78B92800ED0A6F /* FourViewController.swift */,
+				576EF1811C78B94200ED0A6F /* FiveViewController.swift */,
 				571DA0FA1C77CA2A003A3C90 /* Main.storyboard */,
 				571DA0FD1C77CA2A003A3C90 /* Assets.xcassets */,
 				571DA0FF1C77CA2A003A3C90 /* LaunchScreen.storyboard */,
@@ -343,8 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576EF1821C78B94200ED0A6F /* FiveViewController.swift in Sources */,
 				571DA0F91C77CA2A003A3C90 /* SecondViewController.swift in Sources */,
 				571DA0F51C77CA2A003A3C90 /* AppDelegate.swift in Sources */,
+				576EF1801C78B92800ED0A6F /* FourViewController.swift in Sources */,
 				571DA1251C77D570003A3C90 /* ThirdViewController.swift in Sources */,
 				571DA0F71C77CA2A003A3C90 /* FirstViewController.swift in Sources */,
 				571DA1271C77D89D003A3C90 /* Plat.swift in Sources */,

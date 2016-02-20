@@ -28,14 +28,18 @@ class SecondViewController: UITableViewController, UIImagePickerControllerDelega
     @IBAction func SaveTapped(sender: AnyObject) {
         
 //        var plat = (nom: NomLabel.text, descripcio: DescripcioLabel.text, foto: UIImagePNGRepresentation(ImatgeVista))
-        Alamofire.request(.POST, "http://54.201.234.52/plat/save", parameters: ["nom" : NomLabel.text!, "descripcio" : DescripcioLabel.text/*, "foto" : String(UIImagePNGRepresentation(PlatImage.image!)!)*/], encoding: .JSON)
+        
+        Alamofire.request(.POST, "http://54.201.234.52/plat/save", parameters: ["nom" : NomLabel.text!, "descripcio" : DescripcioLabel.text, "usuari": UserPlatName.text! /*, "foto" : String(UIImagePNGRepresentation(PlatImage.image!)!)*/], encoding: .JSON)
             .responseString { response in
                 print(response)
+                
                 self.NomLabel.text = ""
                 self.DescripcioLabel.text = ""
         }
     }
-
+    
+    @IBOutlet weak var UserPlatName: UITextField!
+    
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)

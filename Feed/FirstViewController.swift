@@ -9,7 +9,6 @@
 import UIKit
 import Alamofire
 var Plats = [Plat]()
-
 class FirstViewController: UITableViewController {
 
     @IBOutlet var TableViewPlats: UITableView!
@@ -36,13 +35,16 @@ class FirstViewController: UITableViewController {
                         
                         var nom = item.valueForKey("nom")
                         var descripcio = item.valueForKey("descripcio")
+                        
+                        //var usuari = item.valueForKey("usuari")
                        // var foto = UIImage();
                         //print(item.valueForKey("foto"))
                         /*if (item.valueForKey("foto") != nil) {
                             foto = UIImage(data: (item.valueForKey("foto") as? NSData)!)!
                         }
                         */
-                        let newPlat = Plat(nom: (nom as? String)!, descripcio: (descripcio as? String)! /*, imatge: foto*/)
+                        
+                        let newPlat = Plat(nom: (nom as? String)!, descripcio: (descripcio as? String)! /*usuari: (usuari as? String)!*/ /*, imatge: foto*/)
                         
                         
                         Plats.append(newPlat!)
@@ -54,7 +56,6 @@ class FirstViewController: UITableViewController {
                 }
         }
         
-       
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,8 +80,9 @@ class FirstViewController: UITableViewController {
         
         cell.textLabel?.text = String(Plats[indexPath.row].nom)
         //cell.imageView?.image = plats[indexPath.row].imatge
-        cell.detailTextLabel?.text = "Usuari"
-       
+        
+        //cell.detailTextLabel?.text = String(Plats[indexPath.row].usuari)
+        
         /*
         cell.imageView!.layer.cornerRadius = 10
         cell.imageView!.layer.borderWidth = 2
